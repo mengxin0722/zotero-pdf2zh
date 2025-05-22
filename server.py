@@ -105,7 +105,7 @@ class PDFTranslator:
             '--lang-in', config.sourceLang,
             '--lang-out', config.targetLang,
             '--config', config.configPath, 
-            '--prompt ./promat.txt'
+            '--prompt', './prompt.txt'
         ]
         if config.skip_last_pages and config.skip_last_pages > 0:
             # get pages num of the pdf
